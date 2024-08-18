@@ -1,6 +1,6 @@
 # RNGX
 ##### A random number generator that uses exponentiation-tree and pseudo-random enhancement levels to generate highly pseudo-random numbers.
-##### (y,z)or version.version.version.version.y.z "x" represents top-level RNG, "y" represents the number of enhancement levels, and "z" represents the number of RNGs contained within each enhancement level.
+##### (z,y)or version.version.version.version.y.z "x" represents top-level RNG, "z" represents the number of enhancement levels, and "y" represents the number of RNGs contained within each enhancement level.
 ### Principle
 ##### The top layer consists of the few RNG that ultimately output the final random numbers, with the enhancement levels below them.
 ##### Each of the x RNG at the top layer has y RNGs beneath them providing the seeds for generating random numbers. Similarly, each of these y RNGs also has y RNGs beneath them, which also provide seeds. In total, there are z groups of y RNGs. Dividing z*y by z gives the number of RNGs per enhancement level, and z represents the number of enhancement levels.
