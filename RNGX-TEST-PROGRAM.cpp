@@ -1,15 +1,15 @@
 #include <iostream>
-#include "RNGX.h"
+#include "RNGX7.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "start load\n";
+	cout << "start load...\n";
 	RNGX rngx;
-	rngx.rngxl();
+	rngx.loading();
 	cout << "start gennum\n";
-	int num = rngx.rngxg(0,88);
+	int num = rngx.Gen(0,88);
 	cout << num << endl;
 	system("pause");
 	return 0;
